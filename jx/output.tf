@@ -10,42 +10,50 @@ output "cluster_name" {
   value = var.cluster_name
 }
 
-output "lts_bucket_url" {
-  value = module.cluster.lts_bucket_url
+output "log_storage_url" {
+  value = module.cluster.log_storage_url
 }
 
-output "backup_bucket_url" {
-  value = module.backup.backup_bucket_url
+output "report_storage_url" {
+    value = module.cluster.report_storage_url
 }
 
-output "vault_bucket_name" {
-  value = module.vault.vault_bucket_name
+output "repository_storage_url" {
+    value = module.cluster.repository_storage_url
 }
 
-output "vault_key" {
-  value = module.vault.vault_key
-}
+# output "backup_bucket_url" {
+#   value = module.backup.backup_bucket_url
+# }
 
-output "vault_keyring" {
-  value = module.vault.vault_keyring
-}
+# output "vault_bucket_name" {
+#   value = module.vault.vault_bucket_name
+# }
 
-output "vault_name" {
-  value = module.vault.vault_name
-}
+# output "vault_key" {
+#   value = module.vault.vault_key
+# }
 
-output "vault_sa" {
-  value = module.vault.vault_sa
-}
+# output "vault_keyring" {
+#   value = module.vault.vault_keyring
+# }
 
-output "velero_sa" {
-  value = module.backup.velero_sa
-}
+# output "vault_name" {
+#   value = module.vault.vault_name
+# }
 
-output "externaldns_ns" {
-  value = module.dns.externaldns_ns
-}
+# output "vault_sa" {
+#   value = module.vault.vault_sa
+# }
 
-output "externaldns_dns_name" {
-  value = module.dns.externaldns_dns_name
-}
+# output "velero_sa" {
+#   value = module.backup.velero_sa
+# }
+
+# output "externaldns_ns" {
+#   value = module.dns.externaldns_ns
+# }
+
+# output "externaldns_dns_name" {
+#   value = module.dns.externaldns_dns_name
+# }

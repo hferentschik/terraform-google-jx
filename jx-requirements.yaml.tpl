@@ -18,31 +18,7 @@ ingress:
     production: true
 kaniko: true
 secretStorage: vault
-storage:
-  backup:
-    enabled: true
-    url: ${backup_bucket}
-  logs:
-    enabled: true
-    url: ${lts_bucket}
-  reports:
-    enabled: false
-    url: ""
-  repository:
-    enabled: false
-    url: ""
-vault:
-  bucket: ${vault_bucket}
-  key: ${vault_key}
-  keyring: ${vault_keyring}
-  name: ${vault_name}
-  serviceAccount: ${vault_sa}
-velero:
-  namespace: ${velero_namespace}
-  schedule: "${velero_schedule}"
-  serviceAccount: ${velero_sa}
-  ttl: "${velero_ttl}"
 versionStream:
   ref: ${version_stream_ref}
   url: ${version_stream_url}
-webhook: ${webhook}
+webhook: prow

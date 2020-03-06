@@ -3,11 +3,7 @@ variable "gcp_project" {
 }
 
 variable "zone" {
-  type = "string"
-}
-
-variable "region" {
-  type = "string"
+  type = string
 }
 
 variable "cluster_name" {
@@ -17,6 +13,7 @@ variable "cluster_name" {
 variable "parent_domain" {
   description = "The parent domain to be allocated to the cluster"
 }
+
 // ----------------------------------------------------
 variable "velero_namespace" {
   default = "velero"
